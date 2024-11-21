@@ -1,9 +1,16 @@
-<div class="bg-white rounded-lg shadow-md overflow-hidden">
-    <a href="{{ .Params.link }}" class="block">
+<div
+    class="bg-white rounded-lg shadow-md overflow-hidden transform transition duration-300 ease-in-out hover:-translate-y-2 hover:shadow-lg focus:-translate-y-2 focus:shadow-lg">
+    <a href="{{ .Params.link }}" class="block focus:outline-none">
         <img src="{{ .Params.image }}" alt="{{ .Params.title }}" class="w-full h-48 object-cover">
         <div class="p-4">
             <h3 class="text-xl font-semibold text-gray-800">{{ .Params.title }}</h3>
             <p class="mt-2 text-gray-600">{{ .Params.description }}</p>
+            <!-- Optional Call-to-Action Button -->
+            <!--
+      <div class="mt-4">
+        <a href="{{ .Params.link }}" class="inline-block px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700">Learn More</a>
+      </div>
+      -->
         </div>
     </a>
 </div>
